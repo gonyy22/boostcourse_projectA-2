@@ -1,0 +1,341 @@
+@charset "utf-8";
+body{
+  margin: 0;
+  font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+header{
+  min-width:1080px;
+  height:120px;
+  background-color: #000;
+}
+.header_title{
+  font-size: 40px;
+  width:1000px;
+  margin:0 auto;
+  color:#fff;
+  line-height: 45px;
+  padding:40px;
+}
+.width_parent{
+  width:1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-top:40px;
+}
+.clickbox{
+  height:31px;
+  width:320px;
+  display:inline-block;
+  border: 1px solid #d1d1d1;
+  font-size:16px;
+  text-align: center;
+  line-height: 20px;
+  color:#000;
+}
+.clickbox_table{
+  margin-right: 10px;
+}
+.clickbox_form{
+  margin-right: 10px;
+}
+.clickbox:hover{
+  border:1px solid #454545;
+  font-weight: bold;
+}
+.clickbox a{
+  display:block;
+  width:100%;
+  line-height: 33px;
+  text-decoration: none;
+  color:#000;
+}
+.component{
+  border-bottom: 1px solid #454545;
+  font-size:20px;
+  color:#000;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-top:50px;
+}
+.contents_parent{
+  margin-top:30px;
+  border:1px solid #d1d1d1;
+}
+.contents_parent h3{
+  color: #333;
+  margin: 0;
+  font-size:16px;
+  padding-top:13px;
+  font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+  line-height: 23px;
+}
+.contents_title{
+  height:46px;
+  border-bottom:1px solid #d1d1d1;
+  background-color: #f7f7f7;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contents_detail{
+  margin:0;
+  font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+  padding: 30px 30px;
+  font-size:12px;
+  color:#000;
+}
+.list_bottom_line{
+  margin-bottom: 40px;
+}
+caption{
+  display: table-caption;
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color:#000;
+  font-weight: bold;
+}
+.table_childrensize table{
+  border-collapse: collapse;
+  width:930px;
+  margin: 0 auto;
+  border:1px solid #e4e4e4;
+  font-size: 12px;
+  color:#555;
+  text-align: center;
+}
+.table_childrensize .col_color{
+  height:30px;
+  background-color: #fbfbfb;
+  border:1px solid #e4e4e4;
+}
+.table_childrensize .usaboy_underline{
+  border-bottom: 1px solid #e4e4e4;
+}
+.childrensize_col_bigwidth{
+  width:170px;
+}
+.childrensize_col_smallwidth{
+  width:100px;
+}
+.table_childrensize td{
+  height:30px;
+  border:1px solid #e4e4e4;
+}
+.table_childrensize .side_division_line{
+  border-left: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+.table_refund{
+  margin-top:50px;
+}
+.table_refund table{
+  border-collapse: collapse;
+  width:930px;
+  margin: 0 auto;
+  font-size: 12px;
+  color:#555;
+  text-align: center;
+  border-top:2px solid #a5a5a5;
+  border-bottom: 1px solid #e4e4e4;
+}
+.refund_col_bigwidth{
+  width:300px;
+}
+.refund_col_smallwidth{
+  width:200px;
+}
+.table_refund th{
+  height:35px;
+}
+.table_refund td{
+  height: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: right;
+}
+.table_refund_th_design{
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #e4e4e4;
+}
+.table_refund_tfoot_topline{
+  border-top: 1px solid #a5a5a5;
+  font-weight: bold;
+}
+.form_name{
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+form{
+  border: 1px solid #e4e4e4;
+  background-color: #fbfbfb;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+form .label_title{
+  display:block;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+form input{
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #000;
+}
+.birth_option{
+  display: inline-block;
+}
+.input_box_large{
+  height: 30px;
+  width: 895px;
+}
+.input_box_birth{
+  height:30px;
+  width:297px;
+}
+.input_box_cellphone{
+  height:30px;
+  width:722px;
+}
+.button_certification_num{
+  position: relative;
+  top: 1px;
+  width: 165px;
+  height: 36px;
+  border: 1px solid #08a600;
+  background-color: #4ec53d;
+  font-size: 12px;
+  color: #fff;
+  margin-left: 5px;
+}
+.button_signup{
+  width:900px;
+  height:40px;
+  border: 1px solid #08a600;
+  background-color: #4ec53d;
+  font-size: 16px;
+  color: #fff;
+  margin-top:20px;
+}
+.radio_gender_align{
+  position: relative;
+  top: -3px;
+  margin-right: 65px;
+  font-size: 12px;
+  color: #000;
+}
+.checkbox_hobby_align{
+  position: relative;
+  top: -3px;
+  margin-right: 63px;
+  font-size: 12px;
+  color: #000;
+}
+textarea{
+  resize: none;
+  width:895px;
+  height:200px;
+}
+.list_title{
+  text-align: left;
+  font-size: 14px;
+  color:#000;
+  font-weight: bold;
+}
+.list_searchresult{
+  border: 1px solid #e4e4e4;
+  padding: 30px 30px;
+  margin-bottom: 50px;
+}
+.searchresult_bigtitle{
+  font-size: 32px;
+  color:#000;
+  text-align: center;
+  margin: 30px 0;
+}
+.searchresult_middletitle{
+  font-size: 14px;
+  color:#000;
+  font-weight: bold;
+}
+.searchresult_middletitle_side{
+  font-size: 12px;
+  color:#559bfa;
+}
+.searchresult_middletitle_detail{
+  font-size: 12px;
+  color:#000;
+  margin-bottom: 20px;
+}
+.list_realtimesearch{
+  border: 1px solid #e4e4e4;
+  padding: 30px 30px;
+  width: 200px;
+  margin-bottom: 50px;
+}
+.ranking_bundle{
+  margin-bottom: 10px;
+}
+.ranking{
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  width: 15px;
+  height: 13px;
+  font-size: 10px;
+  color:#666;
+  text-align: center;
+  padding-top:2px;
+}
+.ranking_name{
+  font-size: 12px;
+  color:#000;
+  margin-left: 10px;
+}
+.list_realtimesearch a{
+  text-decoration: none;
+}
+.list_realtimesearch a:hover{
+  text-decoration-line: underline;
+}
+.list_cookie{
+  border: 1px solid #e4e4e4;
+  padding: 15px 0;
+}
+.list_cookie li{
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.webtoon_fontstyle{
+  font-weight: bold;
+  color:#559bfa;
+}
+.webtoon_side_fontstyle{
+  font-weight: bold;
+  color: #000;
+}
+.validity_fontstyle{
+  color:#ec5336;
+}
+.list_cookie_link{
+  color:#559bfa;
+}
+footer{
+  min-width:1080px;
+  border-top: 1px solid #d1d1d1;
+  text-align: center;
+}
+address{
+  font-style: normal;
+  margin-top:40px;
+  font-size: 12px;
+  color:#999;
+}
+.copyright{
+  padding-bottom: 40px;
+  font-size: 12px;
+  color:#000;
+}
