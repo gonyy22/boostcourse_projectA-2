@@ -309,19 +309,35 @@ textarea{
   font-size: 12px;
   margin-bottom: 12px;
 }
-.webtoon_fontstyle{
+.webtoon_font{
   font-weight: bold;
   color:#559bfa;
 }
-.webtoon_side_fontstyle{
+.webtoon_side_font{
   font-weight: bold;
   color: #000;
 }
-.validity_fontstyle{
+.validity_font{
   color:#ec5336;
 }
 .list_cookie_link{
   color:#559bfa;
+}
+.list_news{
+  height:300px;
+  border: 1px solid #e4e4e4;
+  padding: 20px 20px;
+  margin-bottom: 50px;
+}
+.list_news img{
+  float: left;
+  margin-right: 10px;
+}
+.news_title{
+  font-size: 14px;
+  color:#00c;
+  font-weight: bold;
+  text-decoration: underline;
 }
 footer{
   min-width:1080px;
