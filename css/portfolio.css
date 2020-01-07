@@ -3,6 +3,9 @@ body{
   margin: 0;
   font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
 }
+ol, ul, li{
+	list-style: none;
+}
 header{
   min-width:1080px;
   height:120px;
@@ -28,25 +31,16 @@ header{
   border: 1px solid #d1d1d1;
   font-size:16px;
   text-align: center;
-  line-height: 20px;
+  line-height: 33px;
   color:#000;
+  text-decoration: none;
 }
-.clickbox_table{
-  margin-right: 10px;
-}
-.clickbox_form{
-  margin-right: 10px;
+.clickbox + .clickbox.clickbox_interval{
+    margin-left: 10px;
 }
 .clickbox:hover{
   border:1px solid #454545;
   font-weight: bold;
-}
-.clickbox a{
-  display:block;
-  width:100%;
-  line-height: 33px;
-  text-decoration: none;
-  color:#000;
 }
 .component{
   border-bottom: 1px solid #454545;

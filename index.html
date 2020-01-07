@@ -12,15 +12,9 @@
   <main>
     <div class="width_parent">
       <nav>
-        <span class="clickbox clickbox_table">
-          <a href="#table">테이블 요소</a>
-        </span>
-        <span class="clickbox clickbox_form">
-          <a href="#form">폼 요소</a>
-        </span>
-        <span class="clickbox">
-          <a href="#list">리스트 요소</a>
-        </span>
+          <a href="#table" class="clickbox">테이블 요소</a>
+          <a href="#form" class="clickbox clickbox_interval">폼 요소</a>
+          <a href="#list" class="clickbox clickbox_interval">리스트 요소</a>
       </nav>
 
       <h2 class="component">구성 요소</h2>
@@ -199,8 +193,8 @@
                   </select></span><br><br>
 
                   <label class="label_title">성별</label>
-                  <input type="radio" name="성별" id="male"><label for="male" class="radio_gender_align">남자</label>
-                  <input type="radio" name="성별" id="female"><label for="female" class="radio_gender_align">여자</label><br>
+                  <input type="radio" name="gender" id="male"><label for="male" class="radio_gender_align">남자</label>
+                  <input type="radio" name="gender" id="female"><label for="female" class="radio_gender_align">여자</label><br>
 
                   <label for="user_email" class="label_title">이메일</label>
                   <input type="text" placeholder="이메일 주소에 '@'를 포함해주세요." title="이메일 주소에 @을 포함하여 입력" id="user_email" class="input_box_large"><br>
@@ -223,10 +217,8 @@
                   <br>
 
                   <label class="label_title">가입인사</label><br>
-                  <textarea></textarea><br>
-
+                  <label for="signup_text"><textarea></textarea></label><br>
                   <button type="submit" class="button_signup">가입하기</button>
-
                 </form>
               </div>
             </div>
