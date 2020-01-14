@@ -1,10 +1,16 @@
 @charset "utf-8";
-body{
+body,
+h1,h2,h3,h4,h5,h6{
   margin: 0;
+}
+body, input, textarea, select, button, table, form{
   font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
 }
 ol, ul, li{
-	list-style: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 header{
   min-width:1080px;
@@ -20,9 +26,8 @@ header{
 }
 .width_parent{
   width:1000px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   padding: 0 40px;
-  margin-top:40px;
 }
 .clickbox{
   height:31px;
@@ -36,7 +41,7 @@ header{
   text-decoration: none;
 }
 .clickbox + .clickbox.clickbox_interval{
-    margin-left: 10px;
+  margin-left: 12px;
 }
 .clickbox:hover{
   border:1px solid #454545;
@@ -65,12 +70,11 @@ header{
   height:46px;
   border-bottom:1px solid #d1d1d1;
   background-color: #f7f7f7;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 .contents_detail{
   margin:0;
-  padding: 30px 30px;
+  padding: 30px;
   font-size:12px;
   color:#000;
 }
@@ -87,7 +91,7 @@ caption{
 }
 .table_childrensize table{
   border-collapse: collapse;
-  width:930px;
+  width:938px;
   margin: 0 auto;
   border:1px solid #e4e4e4;
   font-size: 12px;
@@ -121,8 +125,7 @@ caption{
 }
 .table_refund table{
   border-collapse: collapse;
-  width:930px;
-  margin: 0 auto;
+  width:938px;
   font-size: 12px;
   color:#555;
   text-align: center;
@@ -140,8 +143,7 @@ caption{
 }
 .table_refund td{
   height: 35px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 0 70px;
   text-align: right;
 }
 .table_refund_th_design{
@@ -157,14 +159,14 @@ caption{
   color: #000;
   font-weight: bold;
 }
-form{
+.form_shape{
   border: 1px solid #e4e4e4;
   background-color: #fbfbfb;
   width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
-form .label_title{
+.form_shape .label_title{
   display:block;
   font-size: 14px;
   color: #000;
@@ -172,7 +174,7 @@ form .label_title{
   margin-bottom: 10px;
   margin-top: 10px;
 }
-form input{
+.form_shape input{
   margin-bottom: 10px;
   font-size: 12px;
   color: #000;
@@ -194,8 +196,7 @@ form input{
 }
 .button_certification_num{
   position: relative;
-  top: 1px;
-  width: 165px;
+  width: 162px;
   height: 36px;
   border: 1px solid #08a600;
   background-color: #4ec53d;
@@ -228,16 +229,17 @@ form input{
   font-size: 12px;
   color: #000;
 }
-textarea{
+.greeting_text{
   resize: none;
   width:895px;
   height:200px;
 }
 .list_title{
+  display: block;
   text-align: left;
   font-size: 14px;
   color:#000;
-  font-weight: bold;
+  margin-bottom: 15px;
 }
 .list_searchresult{
   border: 1px solid #e4e4e4;
@@ -252,23 +254,29 @@ textarea{
   margin: 30px 0;
 }
 .searchresult_middletitle{
+  display: inline-block;
   font-size: 14px;
   color:#000;
   font-weight: bold;
 }
-.searchresult_middletitle_side{
+.searchresult_middletitle_sub{
+  display: inline-block;
   font-size: 12px;
   color:#559bfa;
+  margin-left: 3px;
+  vertical-align: baseline;
 }
 .searchresult_middletitle_detail{
+  display: block;
   font-size: 12px;
   color:#000;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 .list_realtimesearch{
   border: 1px solid #e4e4e4;
-  padding: 30px 30px;
+  padding: 25px 20px;
   width: 200px;
+  height: 260px;
   margin-bottom: 50px;
 }
 .ranking_bundle{
@@ -289,9 +297,6 @@ textarea{
   color:#000;
   margin-left: 10px;
 }
-.list_realtimesearch a{
-  text-decoration: none;
-}
 .list_realtimesearch a:hover{
   text-decoration-line: underline;
   text-decoration-color: #000;
@@ -299,6 +304,7 @@ textarea{
 .list_cookie{
   border: 1px solid #e4e4e4;
   padding: 15px 0;
+  margin-bottom: 50px;
 }
 .list_cookie li{
   font-size: 12px;
@@ -325,6 +331,8 @@ textarea{
   margin-bottom: 50px;
 }
 .list_news img{
+  width: 80px;
+  height: 80px;
   float: left;
   margin-right: 10px;
 }
@@ -348,7 +356,7 @@ textarea{
 }
 .list_webtoon{
   border: 1px solid #e4e4e4;
-  padding:20px 20px;
+  padding:20px;
 }
 .list_webtoon:after{
   display: block;
@@ -356,6 +364,8 @@ textarea{
   content:'';
 }
 .list_webtoon img{
+  width:285px;
+  height: 140px;
   display:block;
   float:left;
   margin-bottom: 5px;
@@ -365,9 +375,6 @@ textarea{
   float:left;
   width:285px;
   margin-top:8px;
-}
-.webtoon_title a{
-  text-decoration: none;
 }
 .webtoon_title a:hover{
   text-decoration: underline;
