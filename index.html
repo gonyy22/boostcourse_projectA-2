@@ -27,28 +27,22 @@
               <caption class="table_title">아동사이즈</caption>
               <colgroup>
                 <col class="childrensize_col_bigwidth">
-                <col class="childrensize_col_smallwidth">
-                <col class="childrensize_col_smallwidth">
-                <col class="childrensize_col_smallwidth">
-                <col class="childrensize_col_smallwidth">
-                <col class="childrensize_col_smallwidth">
-                <col class="childrensize_col_smallwidth">
-                <col class="childrensize_col_smallwidth">
+                <col span="7" class="childrensize_col_smallwidth">
                 <col class="childrensize_col_bigwidth">
               </colgroup>
               <thead>
                 <tr>
-                  <th scope="col" colspan="2" id="childrensize_division" class="col_color">구분</th>
-                  <th scope="col" colspan="2" id="small" class="col_color">Small</th>
-                  <th scope="col" colspan="2" id="medium" class="col_color">Medium</th>
-                  <th scope="col" colspan="2" id="large" class="col_color">Large</th>
+                  <th scope="colgroup" colspan="2" id="childrensize_division" class="col_color">구분</th>
+                  <th scope="colgroup" colspan="2" id="small" class="col_color">Small</th>
+                  <th scope="colgroup" colspan="2" id="medium" class="col_color">Medium</th>
+                  <th scope="colgroup" colspan="2" id="large" class="col_color">Large</th>
                   <th scope="col" id="xlarge" class="col_color">X-Large</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" rowspan="3" id="usaboy" class="usaboy_underline"><p>미국 남아<br>[Boys 2-7]</p></th>
-                  <th id="sizeboy" class="side_division_line">사이즈</th>
+                  <th scope="rowgroup" rowspan="3" id="usaboy"><p>미국 남아<br>[Boys 2-7]</p></th>
+                  <th scope="row" id="sizeboy">사이즈</th>
                   <td headers="childrensize_division usaboy sizeboy small">2T</td>
                   <td headers="childrensize_division usaboy sizeboy small">3T</td>
                   <td headers="childrensize_division usaboy sizeboy medium">4T</td>
@@ -58,7 +52,7 @@
                   <td headers="childrensize_division usaboy sizeboy xlarge">7</td>
                 </tr>
                 <tr>
-                  <th id="tallboy" class="side_division_line">키</th>
+                  <th scope="row" id="tallboy">키</th>
                   <td headers="childrensize_division usaboy tallboy small">84-91</td>
                   <td headers="childrensize_division usaboy tallboy small">91-99</td>
                   <td headers="childrensize_division usaboy tallboy medium">91-99</td>
@@ -68,7 +62,7 @@
                   <td headers="childrensize_division usaboy tallboy xlarge">122-130</td>
                 </tr>
                 <tr>
-                  <th id="weightboy" class="side_division_line">몸무게</th>
+                  <th scope="row" id="weightboy">몸무게</th>
                   <td headers="childrensize_division usaboy weightboy small">13-15</td>
                   <td headers="childrensize_division usaboy weightboy small">14-15</td>
                   <td headers="childrensize_division usaboy weightboy medium">13-15</td>
@@ -78,8 +72,8 @@
                   <td headers="childrensize_division usaboy weightboy xlarge">23-25</td>
                 </tr>
                 <tr>
-                  <th scope="row" rowspan="3" id="usagirl"><p>미국 여아<br>[Girls 2-6X]</p></th>
-                  <th id="sizegirl" class="side_division_line">사이즈</th>
+                  <th scope="rowgroup" rowspan="3" id="usagirl"><p>미국 여아<br>[Girls 2-6X]</p></th>
+                  <th scope="row" id="sizegirl">사이즈</th>
                   <td headers="childrensize_division usagirl sizegirl small">2T</td>
                   <td headers="childrensize_division usagirl sizegirl small">3T</td>
                   <td headers="childrensize_division usagirl sizegirl medium">4T</td>
@@ -89,7 +83,7 @@
                   <td headers="childrensize_division usagirl sizegirl xlarge">6X</td>
                 </tr>
                 <tr>
-                  <th id="tallgirl" class="side_division_line">키</th>
+                  <th scope="row" id="tallgirl">키</th>
                   <td headers="childrensize_division usagirl tallgirl small">84-91</td>
                   <td headers="childrensize_division usagirl tallgirl small">91-99</td>
                   <td headers="childrensize_division usagirl tallgirl medium">91-99</td>
@@ -99,7 +93,7 @@
                   <td headers="childrensize_division usagirl tallgirl xlarge">122-130</td>
                 </tr>
                 <tr>
-                  <th id="weightgirl" class="side_division_line">몸무게</th>
+                  <th scope="row" id="weightgirl">몸무게</th>
                   <td headers="childrensize_division usagirl weightgirl small">13-15</td>
                   <td headers="childrensize_division usagirl weightgirl small">14-15</td>
                   <td headers="childrensize_division usagirl weightgirl medium">13-15</td>
@@ -116,9 +110,7 @@
               <caption class="table_title">환불 가능 금액 조회</caption>
               <colgroup>
                 <col class="refund_col_bigwidth">
-                <col class="refund_col_smallwidth">
-                <col class="refund_col_smallwidth">
-                <col class="refund_col_smallwidth">
+                <col span="3" class="refund_col_smallwidth">
               </colgroup>
               <thead>
                 <tr class="table_refund_th_design">
@@ -207,22 +199,20 @@
 
               <label for="user_cellphone" class="label_title">휴대전화</label>
               <input type="number" placeholder="숫자만 입력해주세요." title="숫자로 휴대전화번호 입력" id="user_cellphone" class="input_box_cellphone">
-              <button type="submit" name="button" class="button_certification_num">인증번호 받기</button>
-              <label for="user_certification_num"></label>
+              <button type="button" name="button" class="button_certification_num">인증번호 받기</button>
               <input type="text" placeholder="인증번호를 입력해주세요." title="인증번호 입력" id="user_certification_num" class="input_box_large">
 
               <label class="label_title">취미</label>
-              <input type="checkbox" id="exercise"><label for="exercise" class="checkbox_hobby_align">운동</label>
-              <input type="checkbox" id="cook"><label for="cook" class="checkbox_hobby_align">요리</label>
-              <input type="checkbox" id="travel"><label for="travel" class="checkbox_hobby_align">여행</label>
-              <input type="checkbox" id="game"><label for="game" class="checkbox_hobby_align">게임</label>
-              <input type="checkbox" id="computer"><label for="computer" class="checkbox_hobby_align">컴퓨터</label>
-              <input type="checkbox" id="music"><label for="music" class="checkbox_hobby_align">음악</label>
-              <input type="checkbox" id="movie"><label for="movie" class="checkbox_hobby_align">영화</label>
-              <input type="checkbox" id="read"><label for="read" class="checkbox_hobby_align">독서</label>
+              <input type="checkbox" name="hobby" id="exercise"><label for="exercise" class="checkbox_hobby_align">운동</label>
+              <input type="checkbox" name="hobby" id="cook"><label for="cook" class="checkbox_hobby_align">요리</label>
+              <input type="checkbox" name="hobby" id="travel"><label for="travel" class="checkbox_hobby_align">여행</label>
+              <input type="checkbox" name="hobby" id="game"><label for="game" class="checkbox_hobby_align">게임</label>
+              <input type="checkbox" name="hobby" id="computer"><label for="computer" class="checkbox_hobby_align">컴퓨터</label>
+              <input type="checkbox" name="hobby" id="music"><label for="music" class="checkbox_hobby_align">음악</label>
+              <input type="checkbox" name="hobby" id="movie"><label for="movie" class="checkbox_hobby_align">영화</label>
+              <input type="checkbox" name="hobby" id="read"><label for="read" class="checkbox_hobby_align">독서</label>
 
-              <label class="label_title">가입인사</label>
-              <label for="greeting"><textarea id="greeting" class="greeting_text"></textarea></label>
+              <label class="label_title" for="greeting">가입인사</label><textarea id="greeting" class="greeting_text"></textarea>
               <button type="submit" class="button_signup">가입하기</button>
             </form>
           </div>
@@ -237,8 +227,6 @@
             <dl>
               <dt class="searchresult_middletitle">프로젝트<sub class="searchresult_middletitle_sub">영양학사전</sub></dt>
               <dd class="searchresult_middletitle_detail">연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획. 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는 특정한 목표, 계획을 위한 학습활동, 실행계획 등을 가리킨다.</dd>
-            </dl>
-            <dl>
               <dt class="searchresult_middletitle">프로젝트<sub class="searchresult_middletitle_sub">Basic 중학생을 위한 기술, 가정 용어사전</sub></dt>
               <dd class="searchresult_middletitle_detail">어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업</dd>
             </dl>
@@ -259,18 +247,18 @@
           <h4 class="list_title">쿠키 이용안내</h4>
           <div class="list_cookie">
             <ul>
-              <li><span class="webtoon_font">웹툰 작품</span><span class="webtoon_side_font">은 쿠키를 사용하여 대여/구매 하실 수 있습니다.</span></li>
-              <li>쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며, <span class="validity_font">유효기간은 지금 후 90일</span>입니다.</li>
-              <li>구매 후 7일 이내, 사용하지 않은 쿠키 패키지는 <a href="#" class="list_cookie_link"><u>구매내역</u></a>에서 직접 구매 취소할 수 있습니다.</li>
+              <li><strong class="webtoon_font">웹툰 작품</strong><span class="webtoon_side_font">은 쿠키를 사용하여 대여/구매 하실 수 있습니다.</span></li>
+              <li>쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며, <strong class="validity_font">유효기간은 지금 후 90일</strong>입니다.</li>
+              <li>구매 후 7일 이내, 사용하지 않은 쿠키 패키지는 <a href="#" class="list_cookie_link"><span class="purchase_history">구매내역</span></a>에서 직접 구매 취소할 수 있습니다.</li>
               <li>일부 사용 후 잔여 쿠키에 대한 구매 취소는 고객센터를 통해 가능하며, 쿠키 구매 시 지급된 보너스 쿠키를 사용한 경우에는 해당 분량을 제외하고 환불됩니다.</li>
-              <li>쿠키 구매 또는 사용 전 이용약관 동의가 필요합니다.<br><a href="#" class="list_cookie_link"><u>쿠키 이용약관</u></a></li>
+              <li>쿠키 구매 또는 사용 전 이용약관 동의가 필요합니다.<br><a href="#" class="list_cookie_link"><span class="use_cookie">쿠키 이용약관</span></a></li>
             </ul>
           </div>
           <h4 class="list_title">뉴스</h4>
           <div class="list_news">
 
             <div class="list_news_individual">
-              <a href="#"><img src="./image/thumbnail1.jpg" alt=""></a>
+              <a href="#" class="link"><img src="./image/thumbnail1.jpg" alt="날씨"></a>
               <a href="#"><p class="news_title">[날씨] 내일도 35도 안팎 폭염&#8231;내륙 소나기&hellip;습도 높아 후텁지근</p></a>
               <span class="news_detail">오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다. 일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를 누그러뜨리진 못했는데요. 동해안을 제외한 전국 대부분 지방에 폭염 특보가 이어지는 가운데 내일도 한낮에 서우로가 대전 35도, 광주와 대구가 36도까지 오를 것으로 예상됩니다. 내일도 대기가 불안정해지면서 오후에 내륙에는 소나기가 지나는 곳이 있겠습니다.</span>
             </div>
@@ -281,7 +269,7 @@
             </div>
 
             <div class="list_news_individual">
-              <a href="#"><img src="./image/thumbnail1.jpg" alt=""></a>
+              <a href="#" class="link"><img src="./image/thumbnail1.jpg" alt="건강과복숭아"></a>
               <a href="#"><p class="news_title">다이어트에 좋은 여름 복숭아, 먹으면 안 되는 사람 있어</p></a>
               <span class="news_detail">복숭아가 제철이다. 여름 복숭아는 다양한 건강 효과를 낸다. 복숭아에는 포도당, 과당, 수분이 풍부하고 유기산(산성을 띠는 물질로 식품에서 신맛을 냄)이 0.5% 정도로 적게 들어 단맛이 강하다. 복숭아의 열량은 100g당 36kcal다. 복숭아 한 개에 약 100kcal 정도다. 포만감에 비해 열량이 적은 편이어서 다이어트를 하는 사람에게도 좋다. 비타민이 많아서 피로 해소에 도움이 된다.</span>
             </div>
@@ -290,14 +278,14 @@
           <div class="list_webtoon">
             <div class="webtoon_title">
               <a href="#">
-                <img src="./image/thumbnail2.jpg" alt="웹툰 하루3컷">
+                <img src="./image/thumbnail2.jpg" alt="">
                 <span class="webtoon_maintitle">하루 3컷</span>
                 <p class="webtoon_subtitle">17화 편리하게 피곤하게</p>
               </a>
             </div>
             <div class="webtoon_title middle_webtoon_title_interval">
               <a href="#">
-                <img src="./image/thumbnail2.jpg" alt="웹툰 유미의 세포들">
+                <img src="./image/thumbnail2.jpg" alt="">
                 <span class="cuttoon_mark">컷툰</span>
                 <span class="webtoon_maintitle">유미의 세포들</span>
                 <p class="webtoon_subtitle">326화 미래에서 온 텔레파시</p>
@@ -305,14 +293,14 @@
             </div>
             <div class="webtoon_title">
               <a href="#">
-                <img src="./image/thumbnail2.jpg" alt="웹툰 이말년씨리즈 2018">
+                <img src="./image/thumbnail2.jpg" alt="">
                 <span class="webtoon_maintitle">이말년씨리즈 2018</span>
                 <p class="webtoon_subtitle">58화 공포의 떡볶이</p>
               </a>
             </div>
             <div class="webtoon_title">
               <a href="#">
-                <img src="./image/thumbnail2.jpg" alt="웹툰 덴마">
+                <img src="./image/thumbnail2.jpg" alt="">
                 <span class="smarttoon_mark">스마트툰</span>
                 <span class="webtoon_maintitle">덴마</span>
                 <p class="webtoon_subtitle">195화 1.다이크(195)</p>
@@ -320,7 +308,7 @@
             </div>
             <div class="webtoon_title middle_webtoon_title_interval">
               <a href="#">
-                <img src="./image/thumbnail2.jpg" alt="웹툰 1인용 기분">
+                <img src="./image/thumbnail2.jpg" alt="">
                 <span class="cuttoon_mark">컷툰</span>
                 <span class="webtoon_maintitle">1인용 기분</span>
                 <p class="webtoon_subtitle">20화 평가</p>
@@ -328,7 +316,7 @@
             </div>
             <div class="webtoon_title">
               <a href="#">
-                <img src="./image/thumbnail2.jpg" alt="웹툰 찬란하지 않아도 괜찮아">
+                <img src="./image/thumbnail2.jpg" alt="">
                 <span class="webtoon_maintitle">찬란하지 않아도 괜찮아</span>
                 <p class="webtoon_subtitle">56화 숨길 수 없어요.</p>
               </a>
